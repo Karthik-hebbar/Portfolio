@@ -1,42 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#Home
-{
-    height: 100vh;
-    font-family: 'Noto Sans JP', sans-serif;
+    /* Home page */
 
+#Home {
+  height: 100vh;
+  font-family: "Noto Sans JP", sans-serif;
+  background: url("./img/portfolio-background.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.sign {
+  font-family: "Caveat", cursive;
+  /* border: 1px solid black; */
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 3%;
+  /* background-color: rgb(66, 63, 63); */
+  /* color:white; */
+  /* border-radius: 20px; */
+  color: white;
+  opacity: 0.5;
 }
 
-#Home nav{
-   margin-left: 80%;
-   margin-top: 20px;
+nav {
+  padding-top: 10px;
 }
 
- nav ul li{
-    display: inline-block;
-    padding-right: 2rem;
-    
+nav ul li {
+  display: inline-block;
+  padding-right: 2rem;
 }
-nav ul li a{
-    text-decoration: none;
-    color:black;
-    transition-property: border;
-    transition-duration: 0.2s;
-    transform-origin: bottom;
-   }
-nav ul li a:hover{
-    border-bottom: 2px black solid;
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition-property: border;
+  transition-duration: 0.2s;
+  transform-origin: bottom;
+  font-size: 1.2em;
+  /* font-weight: bold; */
+  color: rgb(226, 218, 218);
+  text-shadow: 3px 0px 7px black;  
+}
+nav ul li a:hover {
+  border-bottom: 2px lightblue solid;
 }
 
-#Home > .profile{
+#Home > .profile {
   position: relative;
-  top:30%;
+  top: 30%;
+  right: 17%;
   text-align: center;
-  font-size: 2em    
-
+  font-size: 2em;
 }
+.profile h1 {
+  text-shadow: 3px 0px 3px black;
+  color: rgb(231, 220, 220);
+}
+.profile h3 {
+  color: rgb(207, 193, 193);
+  text-shadow: 3px 0px 7px black;
+}
+
+    /* Education */
+
+    
+
