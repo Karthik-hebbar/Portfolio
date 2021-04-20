@@ -4,20 +4,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-    /* Home page */
+
+/* Home page */
 
 #Home {
   height: 100vh;
   font-family: "Noto Sans JP", sans-serif;
-  background: url("./img/portfolio-background.jpg") no-repeat center;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("./img/portfolio-background.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 99vw;
+  height: 7vh;
+  background-color: black;
+  z-index: 5;
 }
 .sign {
   font-family: "Caveat", cursive;
@@ -49,7 +62,7 @@ nav ul li a {
   font-size: 1.2em;
   /* font-weight: bold; */
   color: rgb(226, 218, 218);
-  text-shadow: 3px 0px 7px black;  
+  text-shadow: 3px 0px 7px black;
 }
 nav ul li a:hover {
   border-bottom: 2px lightblue solid;
@@ -57,21 +70,108 @@ nav ul li a:hover {
 
 #Home > .profile {
   position: relative;
-  top: 30%;
+  top: 40%;
   right: 17%;
+  left: 10%;
   text-align: center;
   font-size: 2em;
+  display: inline-block;
 }
 .profile h1 {
   text-shadow: 3px 0px 3px black;
-  color: rgb(231, 220, 220);
+  color: rgb(207, 193, 193);
 }
 .profile h3 {
   color: rgb(207, 193, 193);
   text-shadow: 3px 0px 7px black;
+  display: inline-block;
 }
 
-    /* Education */
 
-    
 
+/* Education */
+
+.Edu {
+  height: 65vh;
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(27, 20, 20, 1) 47%,
+    rgba(73, 86, 89, 1) 88%
+  );
+  color: rgb(226, 220, 220);
+}
+.Edu h2 {
+  font-size: 2.9em;
+  text-align: center;
+  padding: 50px 0 10px 0;
+}
+
+.Education {
+  /* border: 2px black solid; */
+  padding-top: 60px;
+  text-align: center;
+}
+
+.Education > .card {
+  padding-bottom: 20px;
+}
+.Education > .card span {
+  margin-left: 10px;
+}
+
+/* #pen{
+  position: relative;
+  bottom: 90px;
+  width:300px;
+  max-width: 70%;
+
+} */
+
+
+
+/* Projects */
+
+.project {
+  height: 200vh;
+  background-image: linear-gradient(
+    90deg,
+    rgba(27, 21, 21, 1) 3%,
+    rgba(67, 54, 54, 1) 45%,
+    rgba(73, 86, 89, 1) 100%
+  );
+  color: rgb(202, 195, 195);
+  position: relative;
+}
+
+.project h2 {
+  font-size: 2.9em;
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+.project > .card > .sem {
+  position: sticky;
+  top: 50px;
+  font-size: 35px;
+  width: 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(27, 21, 21, 1) 3%,
+    rgba(67, 54, 54, 1) 45%,
+    rgba(73, 86, 89, 1) 100%
+  );
+}
+
+.project > .card > .projname {
+  position: sticky;
+  top: 100px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(27, 21, 21, 1) 3%,
+    rgba(67, 54, 54, 1) 45%,
+    rgba(73, 86, 89, 1) 100%
+  );
+  width:100%;
+}
